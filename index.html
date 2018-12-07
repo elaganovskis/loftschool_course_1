@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>Fitness | Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
@@ -11,154 +11,168 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <a href="#" class="logo"><img src="" class="logo__image" alt="" /></a>
-
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link">
-              <div class="menu__icon">
-                <img src="" alt="" class="menu__icon-picture">
-              </div>
-              <div class="menu__title">Главная</div>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">
-              <div class="menu__icon">
-                <img src="" alt="" class="menu__icon-picture">
-              </div>
-              <div class="menu__title">Отзывы</div>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">
-              <div class="menu__icon">
-                <img src="" alt="" class="menu__icon-picture">
-              </div>
-              <div class="menu__title">Услуги</div>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <address class="contacts">
-        <a href="tel:+88000039210" class="contacts__phone">8(800)00-392-10</a>
-        <div class="contacts__description">График работы</div>
-      </address>
+      <div class="container">
+        <a href="#" class="logo"><img src="" class="logo__image" alt="" /></a>
+  
+        <address class="contacts">
+          <a href="tel:+88000039210" class="contacts__phone">8(800)00-392-10</a>
+          <div class="contacts__description">График работы</div>
+        </address>
+      </div>
     </header>
 
     <div class="page">
-      <div class="page-content">
-        <div class="route">
-          <div class="route__image">
-            <img src="" alt="" class="route__image-elem">
-          </div>
-
-          <div class="route__benefits">
-            <h1 class="route__benefits-heading">Особенности</h1>
-            <ul class="route__benefits-items">
-              <li class="route__benefits-item">
-                <div class="benefits__icon">
-                  <img src="" alt="" class="benefits__icon-picture">
-                </div>
-                <div class="benefits__text">
-                  <h3 class="benefits__item-heading">Уникалность</h3>
-                  <!-- <p class="benefits__item-paragraph">Мы делаем все, для вашего комфорта</p> -->
-                  <ul class="benefits__item-list">
-                    <li class="benefits__list-item">Мы делаем все, для вашего комфорта</li>
-                    <li class="benefits__list-item">Питание включено</li>
-                    <li class="benefits__list-item">Багаж (5 кг)</li>
-                    <li class="benefits__list-item">Душ/баня</li>
-                  </ul>
-                </div>
+      <div class="container container-page">
+        <aside class="main__menu">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img src="" alt="" class="menu__icon-picture">
+                  Главная
+                </a>
               </li>
-              <li class="route__benefits-item">
-                <div class="benefits__icon">
-                  <img src="" alt="" class="benefits__icon-picture">
-                </div>
-                <div class="benefits__text">
-                  <h3 class="benefits__item-heading">Премиум-класс</h3>
-                  <!-- <p class="benefits__item-paragraph">Наш зал оборудован тренажёрами А-класса</p> -->
-                  <ul class="benefits__item-list">
-                    <li class="benefits__list-item">Наш зал оборудован тренажёрами А-класса</li>
-                    <li class="benefits__list-item">Качество</li>
-                    <li class="benefits__list-item">Продуктивность</li>
-                    <li class="benefits__list-item">Результат</li>
-                  </ul>
-                </div>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img src="" alt="" class="menu__icon-picture">
+                  Отзывы
+                </a>
               </li>
-              <li class="route__benefits-item">
-                <div class="benefits__icon">
-                  <img src="" alt="" class="benefits__icon-picture">
-                </div>
-                <div class="benefits__text">
-                  <h3 class="benefits__item-heading">Личный тренер</h3>
-                  <!-- <p class="benefits__item-paragraph">Тренер сделает всё для вашего результата</p> -->
-                  <ul class="benefits__item-list">
-                    <li class="benefits__list-item">Тренер сделает всё для вашего результата</li>
-                    <li class="benefits__list-item">Программа</li>
-                    <li class="benefits__list-item">Питание</li>
-                    <li class="benefits__list-item">План тренировок</li>
-                  </ul>
-                </div>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img src="" alt="" class="menu__icon-picture">
+                  Услуги
+                </a>
               </li>
             </ul>
-          </div>
+          </nav>
+        </aside>
 
-          <div class="news">
-            <h1 class="news__main-heading">Последние новости</h1>
-            <div class="news__content">
-              <ul class="news__list">
-                <li class="news__list-item">
-                  <div class="news__item-icon">
-                    <img src="" alt="" class="news__item-icon-picture">
-                  </div>
-                  <time class="news__date">12.10.2016</time>
-                  <h2 class="news__heading">Похудение с помощью бодибилдинга</h2>
-                  <p class="news__text">Вдыхание одного литра кислорода эквивалентно &#171;сжиганию&#187; 5 калорий, однако в минуту при самом высоком темпе движений атлет способен вдохнуть не более 3-4 литров кислорода. Это крайне важно для каждого начинающего атлета.</p>
-                </li>
-                <li class="news__list-item">
-                  <div class="news__item-icon">
-                    <img src="" alt="" class="news__item-icon-picture">
-                  </div>
-                  <time class="news__date">01.02.2016</time>
-                  <h2 class="news__heading">Заражай друзей, получай призы!</h2>
-                  <p class="news__text">Дополнительно для Вас: пользование баром, таблица замеров, дружеская атмосфера и постоянная поддержка. Мы заботимся о вашем комфорте и предлагаем испытать это уже сегодня!</p>
-                </li>
-                <li class="news__list-item">
-                  <div class="news__item-icon">
-                    <img src="" alt="" class="news__item-icon-picture">
-                  </div>
-                  <time class="news__date">22.12.2015</time>
-                  <h2 class="news__heading">Фрилансер? Выпрями спину!</h2>
-                  <p class="news__text">Создайте рабочее место под себя. Вот этот инструмент поможет определить, что подходит именно вам и вашему организму. Используйте специальную подставку для ноутбука, если вы проводите за ним больше 2 часов. Настройте высоту и яркость монитора!</p>
-                </li>
-              </ul>
-
-              <aside class="topnews">
-                <div class="topnews__titles">
-                  <h3 class="topnews__title-one">Топ новостей</h3>
-                  <h3 class="topnews__title-two">За сентябрь</h3>
-                </div>
-                <ul class="topnews__list">
-                  <li class="topnews__item">
-                    <a href="#" class="topnews__link"><img src="" alt="" class="topnews__link-picture"></a>
+        <main class="main">
+          <section class="route">
+            <section class="route__image">
+              <img src="" alt="" class="route__image-elem">
+            </section>
+  
+            <section class="route__benefits">
+              <article class="route__benefits-part">
+                <h2 class="route__benefits-heading">Особенности</h2>
+                <ul class="route__benefits-items">
+                  <li class="route__benefits-item">
+                    <article class="benefit">
+                      <div class="benefits__icon">
+                        <img src="" alt="" class="benefits__icon-picture">
+                      </div>
+                      <div class="benefits__text">
+                        <h3 class="benefits__item-heading">Уникалность</h3>
+                        <!-- <p class="benefits__item-paragraph">Мы делаем все, для вашего комфорта</p> -->
+                        <ul class="benefits__item-list">
+                          <li class="benefits__list-item">Мы делаем все, для вашего комфорта</li>
+                          <li class="benefits__list-item">Питание включено</li>
+                          <li class="benefits__list-item">Багаж (5 кг)</li>
+                          <li class="benefits__list-item">Душ/баня</li>
+                        </ul>
+                      </div>
+                    </article>
                   </li>
-                  <li class="topnews__item">
-                    <a href="#" class="topnews__link"><img src="" alt="" class="topnews__link-picture"></a>
+                  <li class="route__benefits-item">
+                    <article class="benefit">
+                      <div class="benefits__icon">
+                        <img src="" alt="" class="benefits__icon-picture">
+                      </div>
+                      <div class="benefits__text">
+                        <h3 class="benefits__item-heading">Премиум-класс</h3>
+                        <!-- <p class="benefits__item-paragraph">Наш зал оборудован тренажёрами А-класса</p> -->
+                        <ul class="benefits__item-list">
+                          <li class="benefits__list-item">Наш зал оборудован тренажёрами А-класса</li>
+                          <li class="benefits__list-item">Качество</li>
+                          <li class="benefits__list-item">Продуктивность</li>
+                          <li class="benefits__list-item">Результат</li>
+                        </ul>
+                      </div>
+                    </article>
                   </li>
-                  <li class="topnews__item">
-                    <a href="#" class="topnews__link"><img src="" alt="" class="topnews__link-picture"></a>
+                  <li class="route__benefits-item">
+                    <article class="benefit">
+                      <div class="benefits__icon">
+                        <img src="" alt="" class="benefits__icon-picture">
+                      </div>
+                      <div class="benefits__text">
+                        <h3 class="benefits__item-heading">Личный тренер</h3>
+                        <!-- <p class="benefits__item-paragraph">Тренер сделает всё для вашего результата</p> -->
+                        <ul class="benefits__item-list">
+                          <li class="benefits__list-item">Тренер сделает всё для вашего результата</li>
+                          <li class="benefits__list-item">Программа</li>
+                          <li class="benefits__list-item">Питание</li>
+                          <li class="benefits__list-item">План тренировок</li>
+                        </ul>
+                      </div>
+                    </article>
                   </li>
                 </ul>
-              </aside>
-            </div>
-          </div>
-        </div>
+              </articl>
+            </section>
+  
+            <section class="news">
+              <h2 class="news__main-heading">Последние новости</h2>
+              <div class="news__content">
+                <ul class="news__list">
+                  <li class="news__list-item">
+                    <article class="news__item">
+                      <div class="news__item-icon">
+                        <img src="" alt="" class="news__item-icon-picture">
+                      </div>
+                      <time class="news__date">12.10.2016</time>
+                      <h3 class="news__heading">Похудение с помощью бодибилдинга</h3>
+                      <p class="news__text">Вдыхание одного литра кислорода эквивалентно &#171;сжиганию&#187; 5 калорий, однако в минуту при самом высоком темпе движений атлет способен вдохнуть не более 3-4 литров кислорода. Это крайне важно для каждого начинающего атлета.</p>
+                    </article>
+                  </li>
+                  <li class="news__list-item">
+                    <article class="news__item">
+                      <div class="news__item-icon">
+                        <img src="" alt="" class="news__item-icon-picture">
+                      </div>
+                      <time class="news__date">01.02.2016</time>
+                      <h3 class="news__heading">Заражай друзей, получай призы!</h3>
+                      <p class="news__text">Дополнительно для Вас: пользование баром, таблица замеров, дружеская атмосфера и постоянная поддержка. Мы заботимся о вашем комфорте и предлагаем испытать это уже сегодня!</p>
+                    </article>
+                  </li>
+                  <li class="news__list-item">
+                    <article class="news__item">
+                      <div class="news__item-icon">
+                        <img src="" alt="" class="news__item-icon-picture">
+                      </div>
+                      <time class="news__date">22.12.2015</time>
+                      <h3 class="news__heading">Фрилансер? Выпрями спину!</h3>
+                      <p class="news__text">Создайте рабочее место под себя. Вот этот инструмент поможет определить, что подходит именно вам и вашему организму. Используйте специальную подставку для ноутбука, если вы проводите за ним больше 2 часов. Настройте высоту и яркость монитора!</p>
+                    </article>
+                  </li>
+                </ul>
+  
+                <aside class="topnews">
+                  <div class="topnews__titles">
+                    <h5 class="topnews__title-one">Топ новостей</h5>
+                    <h5 class="topnews__title-two">За сентябрь</h5>
+                  </div>
+                  <ul class="topnews__list">
+                    <li class="topnews__item">
+                      <a href="#" class="topnews__link"><img src="" alt="" class="topnews__link-picture"></a>
+                    </li>
+                    <li class="topnews__item">
+                      <a href="#" class="topnews__link"><img src="" alt="" class="topnews__link-picture"></a>
+                    </li>
+                    <li class="topnews__item">
+                      <a href="#" class="topnews__link"><img src="" alt="" class="topnews__link-picture"></a>
+                    </li>
+                  </ul>
+                </aside>
+              </div>
+            </section>
+          </section>
+        </main>
       </div>
 
-      <div class="pagination">
+      <section class="pagination">
         <div class="pagination__display">Страница 1 из 7</div>
         <div class="pagination__controlls">
           <a href="" class="pagination__prev">&#60;</a>
@@ -187,37 +201,39 @@
           </ul>
           <a href="" class="pagination__next">&#62;</a>
         </div>
-      </div>
+      </section>
     </div>
 
     <footer class="footer">
-      <div class="author">
-        <p class="author__description">Сделано с любовью и старанием на курсе &#171;HTML + CSS&#187;в <a href="#" class="author__link">Loftschool</a>.</p>
-        <p class="author__description">Автор работы: <span>Прохладов Вадим</span></p>
-      </div>
-
-      <a href="#" class="logo"><img src="" class="footer__logo-image" alt="" /></a>
-
-      <div class="social">
-        <div class="social__text">Наши социальные сети</div>
-        <div class="social__links">
-          <ul class="social__links-list">
-            <li class="social__link-item">
-              <a href="#" class="social__link"><img src="" alt="" class="social__link-picture"></a>
-            </li>
-            <li class="social__link-item">
-              <a href="#" class="social__link"><img src="" alt="" class="social__link-picture"></a>
-            </li>
-            <li class="social__link-item">
-              <a href="#" class="social__link"><img src="" alt="" class="social__link-picture"></a>
-            </li>
-            <li class="social__link-item">
-              <a href="#" class="social__link"><img src="" alt="" class="social__link-picture"></a>
-            </li>
-            <li class="social__link-item">
-              <a href="#" class="social__link"><img src="" alt="" class="social__link-picture"></a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="author">
+          <p class="author__description">Сделано с любовью и старанием на курсе &#171;HTML + CSS&#187;в <a href="#" class="author__link">Loftschool</a>.</p>
+          <p class="author__description">Автор работы: <span class="author__name">Прохладов Вадим</span></p>
+        </div>
+  
+        <a href="#" class="logo"><img src="" class="footer__logo-image" alt="" /></a>
+  
+        <div class="social">
+          <div class="social__text">Наши социальные сети</div>
+          <div class="social__links">
+            <ul class="social__links-list">
+              <li class="social__link-item">
+                <a href="#" class="social__link"><img src="" alt="" class="social__link-picture"></a>
+              </li>
+              <li class="social__link-item">
+                <a href="#" class="social__link"><img src="" alt="" class="social__link-picture"></a>
+              </li>
+              <li class="social__link-item">
+                <a href="#" class="social__link"><img src="" alt="" class="social__link-picture"></a>
+              </li>
+              <li class="social__link-item">
+                <a href="#" class="social__link"><img src="" alt="" class="social__link-picture"></a>
+              </li>
+              <li class="social__link-item">
+                <a href="#" class="social__link"><img src="" alt="" class="social__link-picture"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
