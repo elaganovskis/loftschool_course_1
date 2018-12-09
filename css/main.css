@@ -1,0 +1,126 @@
+@import url('normalize.css');
+@font-face {
+  font-family: 'gora_free';
+  src: url('./fonts/gora-free-webfont.woff2') format('woff2'), url('./fonts/gora-free-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('./fonts/opensans-bold-webfont.woff2') format('woff2'), url('./fonts/opensans-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('./fonts/opensans-light-webfont.woff2') format('woff2'), url('./fonts/opensans-light-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('./fonts/opensans-lightitalic-webfont.woff2') format('woff2'), url('./fonts/opensans-lightitalic-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/* font-family: gora_free, sans-serif */
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: open_sans, Arial, sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul>li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1010px;
+  padding: 0 20px;
+}
+
+/* -------HEADER------- */
+
+.header {
+  background: #131415;
+  color: #fff;
+}
+
+.header__container {
+  height: 72px;
+  display: flex;
+  vertical-align: middle;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header__container a {
+  text-decoration: none;
+}
+
+.menu__list {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu__list li {
+  display: block;
+}
+
+.contacts {
+  font-style: normal;
+  text-align: end;
+}
+
+.contacts__phone {
+  font-size: 21px;
+  font-style: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contacts__phone,
+.logo,
+.menu__link {
+  color: inherit;
+}
+
+.contacts__description {
+  text-decoration: underline;
+  color: rgba(248, 149, 19, 0.702);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 18px;
+  font-family: 'gora_free';
+  color: rgb(248, 149, 19);
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1.8px;
+}
