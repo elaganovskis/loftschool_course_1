@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Fitness | Home Page</title>
+  <title>Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
@@ -21,10 +21,10 @@
               <a href="#" class="menu__link menu__link_home">Главная </a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link menu__link_reviews">Отзывы </a>
+              <a href="reviews.html" class="menu__link menu__link_reviews">Отзывы </a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link menu__link_services">Услуги </a>
+              <a href="services.html" class="menu__link menu__link_services">Услуги </a>
             </li>
           </ul>
         </nav>
@@ -32,6 +32,10 @@
         <address class="contacts">
           <a href="tel:+88000039210" class="contacts__phone">8 (800) 00-392-10</a>
           <div class="contacts__description">График работы</div>
+          <div class="contacts__dropdown">
+            <div class="contacts__dropdown_days">пн-вс: 09:00-20:00</div>
+            <div class="contacts__dropdown_time">обед: 14:00-14:30</div>
+          </div>
         </address>
       </div>
     </header>
@@ -150,8 +154,8 @@
           <div class="pagination__controlls">
             <button type="button" class="pagination__button pagination__prev"></button>
             <ul class="pagination__list">
-              <li class="pagination__item">
-                <button type="button" class="pagination__link pagination__link-active">1</button>
+              <li class="pagination__item pagination__item-active">
+                <button type="button" class="pagination__link">1</button>
               </li>
               <li class="pagination__item">
                 <button type="button" class="pagination__link">2</button>
@@ -182,7 +186,7 @@
   <footer class="footer">
     <div class="container footer__container">
       <div class="author">
-        <p class="author__description">Сделано с любовью и старанием на курсе &#171;HTML + CSS&#187; в <a href="#" class="author__link">Loftschool</a>.</p>
+        <p class="author__description">Сделано с любовью и старанием на курсе &#171;HTML + CSS&#187; в <a href="https://loftschool.com/" target="_blank" class="author__link">Loftschool</a>.</p>
         <p class="author__description">Автор работы: <span class="author__name">Прохладов Вадим</span></p>
       </div>
   
