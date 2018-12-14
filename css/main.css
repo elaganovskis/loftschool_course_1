@@ -81,7 +81,7 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1060px;
 }
 
 /* ==========================HEADER========================== */
@@ -724,16 +724,17 @@ a {
   overflow: hidden;
 }
 
-.serive__photo::before {
+.service__photo::before {
   content: "";
   display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: 1;
+  opacity: 0.58;
   left: 0;
   top: 0;
+  z-index: 1;
 }
 
 .service__photo_fitness {
@@ -767,6 +768,7 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.583;
+  z-index: 2;
 }
 
 .service__title {
@@ -783,17 +785,49 @@ a {
   font-size: 16px;
 }
 
-.Фитнес_Фитнес___это_основное_направление_в_наше {
-  font-size: 18px;
-  font-family: "OpenSans";
+/* ==========================Partner========================== */
+
+.partners__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.partners__item {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.partner__image {
+  filter: grayscale(100%);
+}
+
+.partner__image:hover {
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+/* ==========================REVIEWS==========================
+==========================REVIEWS========================== */
+
+.reviews__container {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.reviews-title {
+  font-size: 49px;
   color: rgb(34, 31, 31);
   font-weight: bold;
-  line-height: 1.167;
-  text-align: left;
-  position: absolute;
-  left: 110.053px;
-  top: 447.872px;
-  width: 253px;
-  height: 231px;
-  z-index: 32;
+  text-transform: uppercase;
+  line-height: 0.776;
+  margin-bottom: 50px;
+}
+
+.review {
+  display: flex;
 }
