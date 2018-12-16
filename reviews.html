@@ -155,23 +155,24 @@
 
     <section class="about">
       <div class="reviews__container">
-        <p class="about__paragraph">Помимо перечисленных услуг, мы предоставляем консультации профессиональных диетологов,
+        <p class="about__text">Помимо перечисленных услуг, мы предоставляем консультации профессиональных диетологов,
           тренеров, психологов. Также есть кабинет массажа, зал спа рядом с бассейном и возможность арендовать центр для
           проведения массовых мероприятий. <span class="about__bold">Ждем ваших заявок!</span></p>
       </div>
     </section>
 
-    <section class="form">
+    <section class="form-section">
       <div class="reviews__container">
         <form action="" class="form">
           <div class="form__wrapper">
             <div class="form__elements">
+              <h4 class="form__title">Оставить отзыв</h4>
               <div class="form__row">
                 <label for="" class="form__label">
                   <div class="form__label-text">Ваше имя</div>
                   <input type="text" class="form__input" placeholder="Андрей">
                 </label>
-                <label for="" class="form__label">
+                <label for="" class="form__label form__label_vk">
                   <div class="form__label-text">Ссылка на профиль VK</div>
                   <input type="text" class="form__input" placeholder="vk.com/example">
                 </label>
@@ -179,17 +180,27 @@
               <div class="form__row">
                 <label for="" class="form__label">
                   <div class="form__label-text">Текст отзыва</div>
-                  <input type="text" class="form__input" placeholder="Мне понравилось">
+                  <input type="text" class="form__input form__input_textarea" placeholder="Мне понравилось">
                 </label>
               </div>
               <div class="form__row">
-                <div class="radio__buttons">
-                  <div class="radio__buttons-title">Отображать фото в отзыве?</div>
-                  <div class="radio__buttons-controlls">
-                    <label for="" class="radio__button-label">
-                      <input type="radio" class="radio-button-radio">
+                <div class="radio-buttons">
+                  <div class="radio-buttons__title">Отображать фото в отзыве?</div>
+                  <div class="radio-buttons__controls">
+                    <label class="radio-button__label">
+                      <input type="radio" name="radio-button" class="radio-button" checked>
+                      <span class="radio-button__circle"></span>
+                      <span class="radio-button__text">Да</span>
+                    </label>
+                    <label class="radio-button__label">
+                      <input type="radio" name="radio-button" class="radio-button">
+                      <span class="radio-button__circle"></span>
+                      <span class="radio-button__text">Нет</span>
                     </label>
                   </div>
+                </div>
+                <div class="form__submit">
+                  <button class="form__button">Отправить</button>
                 </div>
               </div>
             </div>
@@ -209,7 +220,7 @@
         <p class="author__description">Автор работы: <span class="author__name">Прохладов Вадим</span></p>
       </div>
 
-      <a href="index.html" class="logo footer__logo">Афродита</a>
+      <a href="index.html" class="logo">Афродита</a>
 
       <div class="social">
         <div class="social__text">Наши социальные сети</div>
