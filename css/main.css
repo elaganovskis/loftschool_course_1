@@ -322,7 +322,7 @@ a {
   font-size: 12px;
   font-family: "open_sans";
   text-transform: uppercase;
-  line-height: 4.767;
+  font-weight: bold;
   letter-spacing: 0.1em;
   margin-bottom: 33px;
 }
