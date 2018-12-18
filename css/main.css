@@ -707,6 +707,7 @@ a {
 
 .section-title_services {
   text-align: left;
+  margin-bottom: 50px;
 }
 
 .service__photo {
@@ -807,6 +808,7 @@ a {
 
 .section-title_reviews {
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .review {
