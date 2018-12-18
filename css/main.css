@@ -84,6 +84,10 @@ a {
   max-width: 1060px;
 }
 
+.container_width_880 {
+  max-width: 880px;
+}
+
 /* ==========================HEADER========================== */
 
 .header {
@@ -235,6 +239,7 @@ a {
   top: 83px;
   opacity: 0;
   transition: opacity 0.5s ease;
+  box-shadow: 0px 0px 10px 0px rgba(23, 59, 117, 0.55);
 }
 
 .contacts__dropdown_days {
@@ -246,11 +251,6 @@ a {
   font-weight: lighter;
 }
 
-.contacts__description:hover .contacts__dropdown {
-  opacity: 1;
-  left: 10px;
-}
-
 .contacts__dropdown::before {
   content: '';
   position: absolute;
@@ -259,8 +259,13 @@ a {
   top: -15px;
   right: 3px;
   border-style: solid;
-  border-width: 0 15px 15px 15px;
+  border-width: 0px 15px 15px 15px;
   border-color: transparent transparent #fff transparent;
+}
+
+.contacts__description:hover+.contacts__dropdown {
+  opacity: 1;
+  left: 10px;
 }
 
 /* ==========================MAIN========================== */
@@ -287,6 +292,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 68px;
+  color: rgb(34, 31, 31);
 }
 
 .section-title_features {
@@ -648,11 +654,6 @@ a {
 /* ==========================SERVICES==========================
 ==========================SERVICES========================== */
 
-.services__container {
-  width: 880px;
-  margin: 0 auto;
-}
-
 /* ==========================BREADCRUMBS========================== */
 
 .breadcrumbs {
@@ -665,6 +666,10 @@ a {
   font-weight: lighter;
   font-style: italic;
   line-height: 1.286;
+}
+
+.breadcrumbs__link {
+  color: grey;
 }
 
 .breadcrumbs__item-active .breadcrumbs__link {
@@ -700,13 +705,8 @@ a {
   margin-bottom: 50px;
 }
 
-.services-title {
-  font-size: 49px;
-  color: rgb(34, 31, 31);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 0.776;
-  margin-bottom: 50px;
+.section-title_services {
+  text-align: left;
 }
 
 .service__photo {
@@ -735,30 +735,6 @@ a {
   left: 0;
   top: 0;
   z-index: 1;
-}
-
-.service__photo_fitness {
-  background-image: url('../img/services/fitness.png');
-}
-
-.service__photo_nutritionist {
-  background-image: url('../img/services/nutritionist.png');
-}
-
-.service__photo_yoga {
-  background-image: url('../img/services/yoga.png');
-}
-
-.service__photo_trx {
-  background-image: url('../img/services/trx.png');
-}
-
-.service__photo_crossfit {
-  background-image: url('../img/services/crossfit.png');
-}
-
-.service__photo_swimming {
-  background-image: url('../img/services/swimming.png');
 }
 
 .service__logo {
@@ -829,13 +805,8 @@ a {
   margin-bottom: 20px;
 }
 
-.reviews-title {
-  font-size: 49px;
-  color: rgb(34, 31, 31);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 0.776;
-  margin-bottom: 20px;
+.section-title_reviews {
+  text-align: left;
 }
 
 .review {
@@ -970,6 +941,14 @@ a {
   outline-color: #f89513;
 }
 
+.form__input_textarea {
+  min-height: 44px;
+  overflow: auto;
+  resize: none;
+  line-height: 0.9;
+  padding: 18px 10px 18px 10px;
+}
+
 .form__button {
   font-size: 12px;
   font-family: "open_sans";
@@ -990,13 +969,13 @@ a {
   display: flex;
 }
 
-.radio-button__label:first-child {
-  margin-left: 0px;
-}
-
 .radio-button__label {
   position: relative;
   margin-left: 20px;
+}
+
+.radio-button__label:first-child {
+  margin-left: 0px;
 }
 
 .radio-button {
@@ -1041,4 +1020,98 @@ label {
 
 .radio-button:checked+.radio-button__circle+.radio-button__text {
   color: #f89513;
+}
+
+.radio-button__text {
+  margin-left: 5px;
+}
+
+/* ==========================FORM========================== */
+
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  animation: 1.6s intro_animation linear;
+}
+
+.intro__image {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../img/intro/intro.png');
+  background-size: cover;
+}
+
+.intro__image::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.58;
+  left: 0;
+  top: 0;
+}
+
+.animation__image {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.animation__button {
+  border-radius: 3px;
+  background-color: rgb(248, 149, 19);
+  border: 0;
+  width: 175px;
+  height: 45px;
+  font-size: 12px;
+  font-family: "open_sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+}
+
+.animation__button:hover {
+  background-color: #000;
+}
+
+@keyframes intro_animation {
+  from {
+    opacity: 0;
+  }
+  20% {
+    transform: scale(1.25);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.17);
+    opacity: 1;
+  }
+  55% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.08);
+  }
+  80% {
+    transform: scale(1.03)
+  }
+  to {
+    transform: scale(1);
+  }
 }

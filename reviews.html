@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Reviews</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="./img/intro/logo.png" />
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
   <script src="main.js"></script>
@@ -43,7 +44,7 @@
     </header>
 
     <nav class="breadcrumbs">
-      <div class="reviews__container">
+      <div class="container container_width_880">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
             <a href="index.html" class="breadcrumbs__link">Главная</a>
@@ -59,8 +60,8 @@
     </nav>
 
     <section class="reviews">
-      <div class="reviews__container">
-        <h2 class="reviews-title">Отзывы</h2>
+      <div class="container container_width_880">
+        <h2 class="section-title section-title_reviews">Отзывы</h2>
         <ul class="reviews__list">
           <li class="reviews__item">
             <article class="review">
@@ -154,7 +155,7 @@
     </section>
 
     <section class="about">
-      <div class="reviews__container">
+      <div class="container container_width_880">
         <p class="about__text">Помимо перечисленных услуг, мы предоставляем консультации профессиональных диетологов,
           тренеров, психологов. Также есть кабинет массажа, зал спа рядом с бассейном и возможность арендовать центр для
           проведения массовых мероприятий. <span class="about__bold">Ждем ваших заявок!</span></p>
@@ -162,7 +163,7 @@
     </section>
 
     <section class="form-section">
-      <div class="reviews__container">
+      <div class="container container_width_880">
         <form action="" class="form">
           <div class="form__wrapper">
             <div class="form__elements">
@@ -180,7 +181,8 @@
               <div class="form__row">
                 <label for="" class="form__label">
                   <div class="form__label-text">Текст отзыва</div>
-                  <input type="text" class="form__input form__input_textarea" placeholder="Мне понравилось">
+                  <textarea name="review" id="" class="form__input form__input_textarea" placeholder="Мне понравилось"></textarea>
+                  <!-- <input type="textarea" class="form__input form__input_textarea" placeholder=""> -->
                 </label>
               </div>
               <div class="form__row">
@@ -188,12 +190,12 @@
                   <div class="radio-buttons__title">Отображать фото в отзыве?</div>
                   <div class="radio-buttons__controls">
                     <label class="radio-button__label">
-                      <input type="radio" name="radio-button" class="radio-button" checked>
+                      <input type="radio" name="radio-button" value="Yes" class="radio-button" checked>
                       <span class="radio-button__circle"></span>
                       <span class="radio-button__text">Да</span>
                     </label>
                     <label class="radio-button__label">
-                      <input type="radio" name="radio-button" class="radio-button">
+                      <input type="radio" name="radio-button" value="No" class="radio-button">
                       <span class="radio-button__circle"></span>
                       <span class="radio-button__text">Нет</span>
                     </label>
