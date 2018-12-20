@@ -79,9 +79,13 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  min-width: 2000 !important;
+}
+
 .container {
   margin: 0 auto;
-  max-width: 1060px;
+  max-width: 1160px;
 }
 
 .container_width_880 {
@@ -103,7 +107,7 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px 0;
+  padding: 10px 22px;
 }
 
 .header__container a {
@@ -123,23 +127,22 @@ a {
 
 /* ==========================Main-Menu========================== */
 
+/* .menu_aside {
+  padding-bottom: 35px;
+} */
+
 .menu__list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 140px;
+  align-items: flex-start;
+  padding-bottom: 35px;
 }
 
-.menu__item {
-  margin-right: 20px;
-}
 
 .menu__item:last-child {
   margin: 0;
-}
-
-.menu__item_active {
-  color: rgb(248, 149, 19);
 }
 
 .menu__link {
@@ -150,6 +153,11 @@ a {
   letter-spacing: 0.1em;
   display: flex;
   align-items: center;
+  color: rgb(34, 31, 31);
+}
+
+.menu__item_active .menu__link {
+  color: rgb(248, 149, 19);
 }
 
 .menu__link:before {
@@ -175,7 +183,7 @@ a {
 }
 
 .menu__link_reviews:before {
-  background-image: url('../img/menu/star_icon.png');
+  background-image: url('../img/menu/feed_icon.png');
 }
 
 .menu__item_active .menu__link_reviews:before,
@@ -209,8 +217,7 @@ a {
   text-transform: uppercase;
 }
 
-.contacts__phone,
-.menu__link {
+.contacts__phone {
   color: inherit;
 }
 
@@ -270,6 +277,31 @@ a {
 
 /* ==========================MAIN========================== */
 
+.page-content {
+  width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 0;
+}
+
+.page-content_services {
+  padding: 45px 0 0px 0;
+}
+
+.aside-content {
+  width: 277px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content {
+  width: 807px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
 .banner {
   padding: 40px 0;
 }
@@ -279,31 +311,38 @@ a {
   margin: 0 auto;
 }
 
-.benefits {
-  background: #131415;
-  color: #fff;
-  padding: 40px 0 100px 0;
-}
-
 .section-title {
+  display: inline-block;
   font-size: 49px;
   font-family: 'open_sans', Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center;
   margin-bottom: 68px;
   color: rgb(34, 31, 31);
 }
 
-.section-title_features {
-  color: rgb(255, 255, 255);
-}
-
-.section-title_news {
+.aside__title {
+  font-size: 18px;
+  font-family: "open_sans";
   color: rgb(34, 31, 31);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.167;
+  margin-bottom: 33px;
+  text-align: center;
 }
 
 /* ==========================FEATURES========================== */
+
+.benefits {
+  border: 1px black solid;
+  padding: 28px 30px 33px 30px;
+}
+
+.benefits h2,
+.benefits ul {
+  max-width: 199px;
+}
 
 .benefits__list {
   display: flex;
@@ -313,7 +352,6 @@ a {
 }
 
 .benefits__item {
-  width: 220px;
   line-height: 2;
   margin: 0 20px;
 }
@@ -330,16 +368,17 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.1em;
-  margin-bottom: 33px;
+  margin-bottom: 22px;
 }
 
 .benefits__item-paragraph {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.667;
   text-align: center;
   padding-left: 15px;
-  margin: 0 0;
 }
+
+.benefits__item-list {}
 
 .benefits__icon {
   display: block;
@@ -365,7 +404,7 @@ a {
 }
 
 .benefits__list-item {
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'open_sans', Arial, sans-serif;
   font-weight: 300;
   text-align: left;
@@ -379,7 +418,6 @@ a {
 /* ==========================NEWS========================== */
 
 .news__container {
-  width: 1100px;
   padding: 40px 0 78px 0;
 }
 
@@ -418,7 +456,7 @@ a {
 }
 
 .news__main-text {
-  max-width: 692px;
+  max-width: 610px;
   line-height: 1.7em;
   margin-left: 20px;
   display: flex;
@@ -461,6 +499,10 @@ a {
   margin-bottom: 20px;
 }
 
+.topnews__item:last-child {
+  margin-bottom: 0;
+}
+
 .topnews__link {
   display: flex;
 }
@@ -472,6 +514,7 @@ a {
 
 .topnews {
   width: 160px;
+  padding: 65px 0 50px 0;
 }
 
 .topnews__link-picture {
@@ -486,8 +529,12 @@ a {
 
 .pagination {
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-left: 188px;
+}
+
+.pagination_reviews {
+  margin-left: 90px;
 }
 
 .news__content .pagination {
@@ -572,6 +619,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 1160px;
 }
 
 .author {
@@ -601,6 +649,10 @@ a {
   vertical-align: middle;
 }
 
+.social_aside {
+  padding: 30px 0;
+}
+
 .social__text {
   font-size: 14px;
   font-weight: bold;
@@ -618,7 +670,6 @@ a {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #d0d0d0;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -657,7 +708,7 @@ a {
 /* ==========================BREADCRUMBS========================== */
 
 .breadcrumbs {
-  padding: 47px 0 25px 0;
+  padding: 10px 0 25px 0;
 }
 
 .breadcrumbs__item {
@@ -706,7 +757,6 @@ a {
 }
 
 .section-title_services {
-  text-align: left;
   margin-bottom: 50px;
 }
 
@@ -764,6 +814,11 @@ a {
 
 /* ==========================Partner========================== */
 
+.partners {
+  border: 1px black solid;
+  padding-top: 25px;
+}
+
 .partners__list {
   display: flex;
   justify-content: space-between;
@@ -773,7 +828,7 @@ a {
 }
 
 .partners__item {
-  width: 250px;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -866,12 +921,14 @@ a {
 }
 
 .about__text {
+  padding: 25px 30px;
   font-size: 18px;
   font-family: "open_sans";
   color: rgb(255, 255, 255);
   line-height: 1.667;
-  width: 640px;
+  width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .about__bold {
@@ -887,8 +944,7 @@ a {
 
 .form {
   background-color: #f5f5f5;
-  width: 77%;
-  margin: 0 auto;
+  width: 94%;
 }
 
 .form__title {
@@ -964,6 +1020,10 @@ a {
   padding: 18px 18px;
   cursor: pointer;
   outline: none;
+}
+
+.form__button:hover {
+  background-color: rgb(248, 149, 19);
 }
 
 .radio-buttons__controls,
