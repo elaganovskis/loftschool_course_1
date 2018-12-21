@@ -140,7 +140,6 @@ a {
   padding-bottom: 35px;
 }
 
-
 .menu__item:last-child {
   margin: 0;
 }
@@ -244,6 +243,7 @@ a {
   padding: 20px 20px;
   position: absolute;
   top: 67px;
+  left: -9999px;
   opacity: 0;
   transition: opacity 0.5s ease;
   box-shadow: 0px 0px 10px 0px rgba(23, 59, 117, 0.55);
@@ -258,7 +258,7 @@ a {
   font-weight: lighter;
 }
 
-.contacts__dropdown::before {
+.contacts__dropdown:before {
   content: '';
   position: absolute;
   width: 0;
@@ -268,6 +268,16 @@ a {
   border-style: solid;
   border-width: 0px 15px 15px 15px;
   border-color: transparent transparent #fff transparent;
+}
+
+.contacts__dropdown:after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 50px;
+  top: -27px;
 }
 
 .contacts__description:hover+.contacts__dropdown {
@@ -285,7 +295,7 @@ a {
 }
 
 .page-content_services {
-  padding: 45px 0 0px 0;
+  padding: 30px 0 0px 0;
 }
 
 .aside-content {
@@ -542,6 +552,11 @@ a {
   align-self: center;
 }
 
+.pagination__controlls {
+  display: flex;
+  vertical-align: middle;
+}
+
 .pagination__controlls li {
   display: inline-block;
 }
@@ -555,10 +570,10 @@ a {
 }
 
 .pagination__list {
-  vertical-align: middle;
   display: flex;
   align-items: center;
   min-width: 180px;
+  margin-left: 7px;
 }
 
 .pagination__link {
@@ -569,6 +584,7 @@ a {
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .pagination__item-active .pagination__link {
@@ -591,6 +607,7 @@ a {
   color: none;
   border: 0;
   cursor: pointer;
+  margin-bottom: 2px;
 }
 
 .pagination__link:hover {
@@ -642,6 +659,8 @@ a {
   text-decoration: none;
 }
 
+/* ==========================SOCIAL========================== */
+
 .social {
   display: flex;
   flex-direction: column;
@@ -665,41 +684,50 @@ a {
   padding-left: 0;
 }
 
-.social__link-item a {
+.social__link-item {
   display: block;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.social__link-item {
   margin-right: 10px;
+  position: relative;
 }
 
-.social__link-item a:hover {
-  background-color: #f89513;
+.social__link-item a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .social__link-vk {
-  background-image: url('../img/social/vk.png');
+  width: 12px;
+  height: 7px;
+  background: url('../img/social/css_sprites.png') -169px -20px;
 }
 
 .social__link-fb {
-  background-image: url('../img/social/fb.png');
+  width: 6px;
+  height: 13px;
+  background: url('../img/social/css_sprites.png') -20px -20px;
 }
 
 .social__link-google {
-  background-image: url('../img/social/google.png');
+  width: 15px;
+  height: 9px;
+  background: url('../img/social/css_sprites.png') -221px -20px;
 }
 
 .social__link-twitter {
-  background-image: url('../img/social/twitter.png');
+  width: 11px;
+  height: 9px;
+  background: url('../img/social/css_sprites.png') -66px -20px;
 }
 
 .social__link-mail {
-  background-image: url('../img/social/mail.png');
+  width: 12px;
+  height: 9px;
+  background: url('../img/social/css_sprites.png') -117px -20px;
 }
 
 /* ==========================SERVICES==========================
@@ -828,10 +856,17 @@ a {
 }
 
 .partners__item {
-  width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  width: 100%;
+}
+
+.partner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .partner__image {
