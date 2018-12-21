@@ -146,7 +146,7 @@ a {
 
 .menu__link {
   font-size: 12px;
-  font-family: 'open_sans';
+  font-family: 'open_sans', Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -235,7 +235,7 @@ a {
 
 .contacts__dropdown {
   font-size: 14px;
-  font-family: "open_sans";
+  font-family: "open_sans", Arial, sans-serif;
   line-height: 1.286;
   text-align: left;
   width: 165px;
@@ -333,7 +333,7 @@ a {
 
 .aside__title {
   font-size: 18px;
-  font-family: "open_sans";
+  font-family: "open_sans", Arial, sans-serif;
   color: rgb(34, 31, 31);
   font-weight: bold;
   text-transform: uppercase;
@@ -374,7 +374,7 @@ a {
 .benefits__title {
   text-align: center;
   font-size: 12px;
-  font-family: "open_sans";
+  font-family: "open_sans", Arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -479,7 +479,7 @@ a {
 
 .news__heading {
   font-size: 16px;
-  font-family: "open_sans";
+  font-family: "open_sans", Arial, sans-serif;
   color: #221f1f;
   font-weight: bold;
   line-height: 1.5;
@@ -825,7 +825,7 @@ a {
 
 .service__logo {
   font-size: 24px;
-  font-family: 'open_sans';
+  font-family: 'open_sans', Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
@@ -835,7 +835,7 @@ a {
 
 .service__title {
   font-size: 18px;
-  font-family: "open_sans";
+  font-family: "open_sans", Arial, sans-serif;
   color: rgb(34, 31, 31);
   font-weight: bold;
   line-height: 1.167;
@@ -943,7 +943,7 @@ a {
 
 .review__author {
   font-size: 16px;
-  font-family: "open_sans";
+  font-family: "open_sans", Arial, sans-serif;
   color: #221f1f;
   font-weight: bold;
   line-height: 1.5;
@@ -966,7 +966,7 @@ a {
 .about__text {
   padding: 25px 30px;
   font-size: 18px;
-  font-family: "open_sans";
+  font-family: "open_sans", Arial, sans-serif;
   color: rgb(255, 255, 255);
   line-height: 1.667;
   width: 100%;
@@ -992,7 +992,7 @@ a {
 
 .form__title {
   font-size: 49px;
-  font-family: "open_sans";
+  font-family: "open_sans", Arial, sans-serif;
   color: rgb(34, 31, 31);
   font-weight: bold;
   line-height: 0.776;
@@ -1020,7 +1020,7 @@ a {
 .radio-buttons__title,
 .radio-button__text {
   font-size: 14px;
-  font-family: "open_sans";
+  font-family: "open_sans", Arial, sans-serif;
   color: rgb(34, 31, 31);
   margin-bottom: 10px;
 }
@@ -1035,7 +1035,7 @@ a {
   height: 44px;
   border: 0;
   font-size: 14px;
-  font-family: 'open_sans';
+  font-family: 'open_sans', Arial, sans-serif;
   color: rgba(34, 31, 31, 0.502);
   padding: 18px 0px 18px 10px;
   margin-bottom: 20px;
@@ -1052,7 +1052,7 @@ a {
 
 .form__button {
   font-size: 12px;
-  font-family: "open_sans";
+  font-family: "open_sans", Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
@@ -1180,7 +1180,7 @@ label {
   width: 175px;
   height: 45px;
   font-size: 12px;
-  font-family: "open_sans";
+  font-family: "open_sans", Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
