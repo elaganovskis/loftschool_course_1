@@ -221,6 +221,11 @@ a {
 }
 
 .contacts__description {
+  display: inline-block;
+  position: relative;
+}
+
+.contacts__description .contacts__link {
   text-decoration: underline;
   color: rgba(248, 149, 19, 0.702);
   font-size: 14px;
@@ -228,8 +233,8 @@ a {
   cursor: pointer;
 }
 
-.contacts__description:hover,
-.contacts__description:active {
+.contacts__description:hover .contacts__link,
+.contacts__description:active .contacts__link {
   color: rgba(255, 255, 255, 0.702);
 }
 
@@ -242,7 +247,7 @@ a {
   height: 70px;
   padding: 20px 20px;
   position: absolute;
-  top: 67px;
+  margin-top: 19px;
   left: -9999px;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -260,6 +265,16 @@ a {
 
 .contacts__dropdown:before {
   content: '';
+  display: block;
+  position: absolute;
+  height: 20px;
+  left: 0;
+  right: 0;
+  top: -20px;
+}
+
+.contacts__dropdown:after {
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
@@ -270,7 +285,7 @@ a {
   border-color: transparent transparent #fff transparent;
 }
 
-.contacts__dropdown:after {
+/* .contacts__dropdown:before {
   display: block;
   content: "";
   position: absolute;
@@ -278,11 +293,11 @@ a {
   left: 0;
   height: 50px;
   top: -27px;
-}
+} */
 
-.contacts__description:hover+.contacts__dropdown {
+.contacts__description:hover .contacts__link+.contacts__dropdown {
   opacity: 1;
-  left: 10px;
+  left: -50px;
 }
 
 /* ==========================MAIN========================== */
@@ -909,6 +924,18 @@ a {
   display: flex;
 }
 
+.review__content {
+  max-width: 620px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review__content:nth-child(3) {
+  width: 500px;
+}
+
 .review__icon img {
   border-radius: 50%;
 }
@@ -927,14 +954,6 @@ a {
 .review__icon_noavatar img {
   position: absolute;
   border-radius: 0;
-}
-
-.review__content {
-  width: 685px;
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .review__date {
