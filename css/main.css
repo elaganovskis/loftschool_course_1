@@ -102,7 +102,6 @@ a {
 
 .header .header__container {
   display: flex;
-  vertical-align: middle;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -1032,7 +1031,6 @@ a {
 
 .form__label {
   width: 100%;
-  max-width: 560px;
 }
 
 .form__label-text,
